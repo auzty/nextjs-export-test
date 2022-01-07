@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "./nodemodules/.bin/next start -p $PORT",
     "export": "./pre-export.sh && next build && next export && ./post-export.sh"
   },
   "dependencies": {
