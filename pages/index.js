@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import ColoredLine from '../src/components/custom-css'
 
 export default function Home() {
   return (
@@ -10,44 +11,89 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Testing Next Export 
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Supported Feature Test
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/post/testdynamic" className="card">
+            <h3>Dynamic Routes &rarr;</h3>
+            <p>Example Dynamic Routes.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="/home" className="card">
+            <h3>Prefetching &rarr;</h3>
+            <p>Example Prefetching with "next/link"</p>
           </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="/post/dynamic-sample" className="card">
+            <h3>Dynamic Import &rarr;</h3>
+            <p>Example Dynamic Import with "next/dynamic"</p>
           </a>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+          <a href="/post/client-fetch" className="card">
+            <h3>Client-side data fetching &rarr;</h3>
+            <p>Example Client-side data fetching</p>
+          </a>
+
+          <a href="/sample/static/static-props" className="card">
+            <h3>getStaticProps &rarr;</h3>
+            <p>Example getStaticProps</p>
+          </a>
+
+          <a href="/sample/static/1" className="card">
+            <h3>getStaticPaths &rarr;</h3>
+            <p>Example getStaticPaths</p>
           </a>
         </div>
-      </main>
 
+        <p className="description">
+          Not Supported Feature Test
+        </p>
+
+        <div className="grid">
+          <a href="/sample/locales" className="card">
+            <h3>Localization Routing &rarr;</h3>
+            <p>Example Routing with Localization.</p>
+          </a>
+          <a href="/sample/api-routes" className="card">
+            <h3>API Routes &rarr;</h3>
+            <p>Example API Routes.</p>
+          </a>
+          <a href="/sample/rewrites" className="card">
+            <h3>Rewrites &rarr;</h3>
+            <p>Example Rewrites.</p>
+          </a>
+          <a href="/sample/redirects" className="card">
+            <h3>Redirects &rarr;</h3>
+            <p>Example Redirects.</p>
+          </a>
+          <a href="/sample/headers" className="card">
+            <h3>Headers &rarr;</h3>
+            <p>Example Headers</p>
+          </a>
+          <a href="/sample/middleware" className="card">
+            <h3>Middleware &rarr;</h3>
+            <p>Example Middleware</p>
+          </a>
+          <a href="/sample/incremental" className="card">
+            <h3>Incremental Static Regeneration &rarr;</h3>
+            <p>Example Static Regeneration</p>
+          </a>
+          <a href="sample/fallback/1" className="card">
+            <h3> fallback: true &rarr;</h3>
+            <p>Example fallback: true.</p>
+          </a>
+          <a href="/post/testdynamic" className="card">
+            <h3> getServerSideProps &rarr;</h3>
+            <p>Example getServerSideProps.</p>
+          </a>
+        </div>
+
+      </main>
       <footer>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
