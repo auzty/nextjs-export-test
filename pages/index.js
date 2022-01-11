@@ -19,9 +19,10 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <a href="/post/testdynamic" className="card">
+
+          <a href="/sample/static/1" className="card">
             <h3>Dynamic Routes &rarr;</h3>
-            <p>Example Dynamic Routes.</p>
+            <p>Example Dynamic Routes with getStaticPaths</p>
           </a>
 
           <a href="/home" className="card">
@@ -44,10 +45,6 @@ export default function Home() {
             <p>Example getStaticProps</p>
           </a>
 
-          <a href="/sample/static/1" className="card">
-            <h3>getStaticPaths &rarr;</h3>
-            <p>Example getStaticPaths</p>
-          </a>
         </div>
 
         <p className="description">
@@ -55,6 +52,10 @@ export default function Home() {
         </p>
 
         <div className="grid">
+          <a href="/post/testdynamic" className="card">
+            <h3>Dynamic Routes &rarr;</h3>
+            <p>Example Dynamic Routes.</p>
+          </a>
           <a href="/sample/locales" className="card">
             <h3>Localization Routing &rarr;</h3>
             <p>Example Routing with Localization.</p>

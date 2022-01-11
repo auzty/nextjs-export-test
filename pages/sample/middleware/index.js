@@ -23,7 +23,12 @@ export default function About() {
           {' '}
           This page was rendered by <Code>{`pages${route}.js`}</Code>.
         </p>
-           this is middleware test 
+           this is middleware test (the middleware not working if this text showed up)
+           <br />
+             the result should be
+           <pre>
+             Greetings from middlerware. This pages are served by _middleware.js
+           </pre>
             <React.Fragment>
             </React.Fragment> 
       </div>
